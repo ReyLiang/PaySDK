@@ -1,0 +1,11 @@
+framework module TYYSupportSDK {
+  umbrella header "TYYSupportSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TYYSupportSDK.Swift {
+    header "TYYSupportSDK-Swift.h"
+    requires objc
+}

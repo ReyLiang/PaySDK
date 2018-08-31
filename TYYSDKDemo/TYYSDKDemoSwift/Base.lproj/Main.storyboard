@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gq4-HE-Nkv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pGS-W5-Vej">
+            <objects>
+                <viewController id="Gq4-HE-Nkv" customClass="ViewController" customModule="TYYSDKDemoSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Icx-C3-O5M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gxx-AD-Jju">
+                                <rect key="frame" x="10" y="35" width="355" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="62956" borderStyle="roundedRect" placeholder="游戏id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-RT-IZJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fyz-D1-s13">
+                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TYD-oZ-IFR">
+                                <rect key="frame" x="0.0" y="75" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUY-Gx-Mmk">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                                        <state key="normal" title="初始化"/>
+                                        <connections>
+                                            <action selector="initsdk:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="faw-ap-vum"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIn-3K-jST">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="登录"/>
+                                        <connections>
+                                            <action selector="loginsdk:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="ZX5-kJ-0hK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fr-VR-6wL">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="50"/>
+                                        <state key="normal" title="充值"/>
+                                        <connections>
+                                            <action selector="rechargesdk:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="Gu4-h8-be8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNw-bR-P8P">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="主界面"/>
+                                        <connections>
+                                            <action selector="homeviewsdk:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="CSV-8u-PgD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ihb-66-4bX"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-h9-7jw">
+                                <rect key="frame" x="0.0" y="125" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlC-Yy-baz">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                                        <state key="normal" title="上传角色"/>
+                                        <connections>
+                                            <action selector="uploadRole:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="ZcP-fE-Z3Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sc-IE-uat">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="上传聊天"/>
+                                        <connections>
+                                            <action selector="uploadChat:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="Z7b-cN-aYs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSN-mv-7oN">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="50"/>
+                                        <state key="normal" title="注销"/>
+                                        <connections>
+                                            <action selector="logout:" destination="Gq4-HE-Nkv" eventType="touchUpInside" id="JyI-6Q-mYY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mwl-M7-bNV">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EGP-DC-Pv4"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e4Y-6U-Nsr">
+                                <rect key="frame" x="0.0" y="185" width="375" height="482"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G6e-oj-jga" firstAttribute="trailing" secondItem="Gxx-AD-Jju" secondAttribute="trailing" constant="10" id="2Z2-8a-wpT"/>
+                            <constraint firstItem="Gxx-AD-Jju" firstAttribute="top" secondItem="G6e-oj-jga" secondAttribute="top" constant="15" id="5b8-4w-RlG"/>
+                            <constraint firstItem="G6e-oj-jga" firstAttribute="trailing" secondItem="TYD-oZ-IFR" secondAttribute="trailing" id="6kq-Ef-BB3"/>
+                            <constraint firstItem="e4Y-6U-Nsr" firstAttribute="leading" secondItem="G6e-oj-jga" secondAttribute="leading" id="BFs-AO-Gii"/>
+                            <constraint firstItem="TYD-oZ-IFR" firstAttribute="leading" secondItem="G6e-oj-jga" secondAttribute="leading" id="Mrn-QZ-YPG"/>
+                            <constraint firstItem="G6e-oj-jga" firstAttribute="trailing" secondItem="e4Y-6U-Nsr" secondAttribute="trailing" id="NS2-ge-HMT"/>
+                            <constraint firstItem="TYD-oZ-IFR" firstAttribute="top" secondItem="Gxx-AD-Jju" secondAttribute="bottom" constant="10" id="Qj7-7m-VNn"/>
+                            <constraint firstItem="e4Y-6U-Nsr" firstAttribute="top" secondItem="2Vl-h9-7jw" secondAttribute="bottom" constant="10" id="R29-ns-yH0"/>
+                            <constraint firstItem="2Vl-h9-7jw" firstAttribute="leading" secondItem="G6e-oj-jga" secondAttribute="leading" id="YaJ-h2-YCV"/>
+                            <constraint firstItem="G6e-oj-jga" firstAttribute="trailing" secondItem="2Vl-h9-7jw" secondAttribute="trailing" id="cc3-5x-SMl"/>
+                            <constraint firstItem="G6e-oj-jga" firstAttribute="bottom" secondItem="e4Y-6U-Nsr" secondAttribute="bottom" id="dO7-VQ-oCE"/>
+                            <constraint firstItem="2Vl-h9-7jw" firstAttribute="top" secondItem="TYD-oZ-IFR" secondAttribute="bottom" id="iM4-ro-gNm"/>
+                            <constraint firstItem="Gxx-AD-Jju" firstAttribute="leading" secondItem="G6e-oj-jga" secondAttribute="leading" constant="10" id="xub-AC-M7l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G6e-oj-jga"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameIdTextView" destination="PcJ-RT-IZJ" id="duQ-SG-gYq"/>
+                        <outlet property="moneyTextView" destination="Fyz-D1-s13" id="OTH-PR-zp3"/>
+                        <outlet property="textView" destination="e4Y-6U-Nsr" id="JjX-by-ehH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QId-yM-uLQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+</document>

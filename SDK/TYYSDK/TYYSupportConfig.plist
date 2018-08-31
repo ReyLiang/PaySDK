@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>agent_id</key>
+	<string>1008</string>
+	<key>agent_app_id</key>
+	<string>62956</string>
+	<key>sub_sdk_param</key>
+	<dict>
+		<key>TY_APPID</key>
+		<string>62956</string>
+		<key>TY_CLIENTID</key>
+		<string>1</string>
+		<key>TY_CLIENTKEY</key>
+		<string>36ba570b88802fd382d65c627e15f697</string>
+	</dict>
+</dict>
+</plist>
