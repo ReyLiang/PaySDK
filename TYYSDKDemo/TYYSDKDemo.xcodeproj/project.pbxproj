@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA298DA2213E4094004E8A32 /* EmptyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA298DA1213E4094004E8A32 /* EmptyClass.swift */; };
 		AAA25C8D212FECBF00DD3D1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA25C8C212FECBF00DD3D1C /* AppDelegate.m */; };
 		AAA25C90212FECBF00DD3D1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA25C8F212FECBF00DD3D1C /* ViewController.m */; };
 		AAA25C93212FECBF00DD3D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA25C91212FECBF00DD3D1C /* Main.storyboard */; };
@@ -66,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA298DA0213E4093004E8A32 /* TYYSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYYSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AA298DA1213E4094004E8A32 /* EmptyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyClass.swift; sourceTree = "<group>"; };
 		AAA25C88212FECBF00DD3D1C /* TYYSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYYSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA25C8B212FECBF00DD3D1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAA25C8C212FECBF00DD3D1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				AAA25C96212FECC000DD3D1C /* LaunchScreen.storyboard */,
 				AAA25C99212FECC000DD3D1C /* Info.plist */,
 				AAA25C9A212FECC000DD3D1C /* main.m */,
+				AA298DA1213E4094004E8A32 /* EmptyClass.swift */,
+				AA298DA0213E4093004E8A32 /* TYYSDKDemo-Bridging-Header.h */,
 			);
 			path = TYYSDKDemo;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				TargetAttributes = {
 					AAA25C87212FECBF00DD3D1C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					AAA25CB4213007E900DD3D1C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -283,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA298DA2213E4094004E8A32 /* EmptyClass.swift in Sources */,
 				AAA25C90212FECBF00DD3D1C /* ViewController.m in Sources */,
 				AAA25C9B212FECC000DD3D1C /* main.m in Sources */,
 				AAA25C8D212FECBF00DD3D1C /* AppDelegate.m in Sources */,
@@ -451,7 +458,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 996LADRHG6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -466,6 +475,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tyydemo.TYYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TYYSDKDemo/TYYSDKDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -475,7 +487,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 996LADRHG6;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -490,6 +504,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tyydemo.TYYSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TYYSDKDemo/TYYSDKDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
