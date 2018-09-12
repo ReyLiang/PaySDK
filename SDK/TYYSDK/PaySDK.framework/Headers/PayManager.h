@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
 typedef NS_ENUM(NSInteger, NowPayResult) {
@@ -32,6 +33,10 @@ typedef NS_ENUM(NSInteger, NowPayResult) {
 typedef void(^AlipayCompletionBlock)(NSDictionary *resultDic);
 
 @interface PayManager : NSObject
+///小程序支付
++ (BOOL) wechatAppPayWithAppid:(NSString *)appid
+                      userName:(NSString *)userName
+                          path:(NSString *)path;
 
 + (BOOL) alipayPayInterceptorWithUrl:(NSString *)urlStr
                           fromScheme:(NSString *)schemeStr
@@ -42,6 +47,7 @@ typedef void(^AlipayCompletionBlock)(NSDictionary *resultDic);
                callback:(AlipayCompletionBlock)completionBlock;
 
 + (void) wftPay:(NSString *)tokenId
+     fromScheme:(NSString *)schemeStr
        callback:(AlipayCompletionBlock)completionBlock;
 
 
