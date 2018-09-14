@@ -520,6 +520,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../SDK/TYYSDK",
+					"$(SRCROOT)/../SDK/SwiftSupport",
 				);
 				INFOPLIST_FILE = TYYSDKDemoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -546,6 +547,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../SDK/TYYSDK",
+					"$(SRCROOT)/../SDK/SwiftSupport",
 				);
 				INFOPLIST_FILE = TYYSDKDemoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

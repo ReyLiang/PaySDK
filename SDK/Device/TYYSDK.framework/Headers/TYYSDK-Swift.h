@@ -513,6 +513,18 @@ SWIFT_CLASS("_TtC6TYYSDK6TYYSDK")
 - (BOOL)application:(UIApplication * _Nonnull)application open:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation SWIFT_WARN_UNUSED_RESULT;
 /// (选接)Application回调,支付使用
 - (BOOL)application:(UIApplication * _Nonnull)application handleOpen:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// 提示框
+/// \param title 标题
+///
+/// \param msg 提示内容
+///
+/// \param handler 回调方法,可为空
+///
++ (void)showErrorWithTitle:(NSString * _Nonnull)title msg:(NSString * _Nonnull)msg handler:(void (^ _Nullable)(void))handler;
+/// 自动隐藏提示框
+/// \param msg 提示内容
+///
++ (void)showToastWithMsg:(NSString * _Nonnull)msg;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

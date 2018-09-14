@@ -47,6 +47,7 @@ NSString * userId;
         switch (state) {
             case InitStateSuccess:
                 [weakSelf textPrint:@"初始化成功"];
+                
                 break;
                 
             case InitStateFailed:
@@ -222,6 +223,8 @@ NSString * userId;
 
 - (void)textPrint:(NSString *)text{
     NSLog(@"%@",text);
+    
+    [TYYSDK showToastWithMsg:text];
     
     self.textView.text = [NSString stringWithFormat:@"%@\n%@",text,self.textView.text];
 }

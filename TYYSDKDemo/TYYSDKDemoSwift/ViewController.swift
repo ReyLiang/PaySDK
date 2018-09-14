@@ -9,6 +9,7 @@
 import UIKit
 import TYYSDK
 
+
 class ViewController: TYYViewController {
 
     var userId:String = ""
@@ -187,6 +188,7 @@ class ViewController: TYYViewController {
     
     func textPrint(_ text:String) {
         print(text)
+        TYYSDK.showToast(msg: text)
         textView.text = "\(text)\n\(textView.text!)"
     }
     
